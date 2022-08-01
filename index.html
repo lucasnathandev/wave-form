@@ -4,18 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Wave Animation</title>
+    <title>Form Input Wave</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <form action="" class="container">
+    <div class="container">
       <h1>Please Login</h1>
-      <label for="" class="label"></label>
-      <input name="email" id="email" type="email" class="input" />
-      <input name="password" id="password" type="password" class="input" />
-      <button class="login"></button>
-      <small>Don't have an account? <a href="">Register</a></small>
-    </form>
+      <form action="">
+        <div class="form-control">
+          <input name="email" id="email" type="email" class="input" required />
+          <label for="" class="label">Email</label>
+        </div>
+        <div class="form-control">
+          <input
+            name="password"
+            id="password"
+            type="password"
+            class="input"
+            required
+          />
+          <label for="" class="label">Password</label>
+        </div>
+        <button class="btn">Login</button>
+        <small class="text"''>Don't have an account? <a href="#">Register</a></small>
+      </form>
+    </div>
   </body>
 </html>
